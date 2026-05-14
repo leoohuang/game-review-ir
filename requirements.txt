@@ -1,0 +1,6 @@
+pandas>=2.0.0
+requests>=2.31.0
+PyYAML>=6.0.1
+rank-bm25>=0.2.2
+tqdm>=4.66.0
+beautifulsoup4>=4.12.0

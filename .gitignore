@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/*
+data/processed/*
+results/*
+annotation/*
+logs/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/.gitkeep
+!annotation/.gitkeep
+!logs/.gitkeep

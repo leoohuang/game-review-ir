@@ -1,0 +1,36 @@
+query_id,aspect,query
+G01,graphics,how good are the graphics
+G02,graphics,does the game look realistic
+G03,graphics,is the art style impressive
+G04,graphics,how is the visual quality on PC
+G05,graphics,are there performance issues
+G06,graphics,does the game run smoothly
+G07,graphics,how detailed are the environments
+C01,combat,how satisfying is the combat
+C02,combat,does the combat feel responsive
+C03,combat,is the combat difficult
+C04,combat,how are the boss fights
+C05,combat,does the gameplay feel smooth
+C06,combat,is fighting fun in this game
+C07,combat,how good are the combat mechanics
+S01,story,is the story engaging
+S02,story,how good is the writing
+S03,story,are the characters memorable
+S04,story,does the narrative make sense
+S05,story,is the lore interesting
+S06,story,does the story keep you invested
+S07,story,how emotional is the story
+P01,price,is the game worth the price
+P02,price,should I buy this at full price
+P03,price,is there enough content for the money
+P04,price,is the game overpriced
+P05,price,is it worth buying on sale
+P06,price,how much replay value does it have
+P07,price,is the DLC worth buying
+T01,controls,are the controls responsive
+T02,controls,does the game support controller well
+T03,controls,is the UI easy to use
+T04,controls,how good is keyboard and mouse support
+T05,controls,are the controls intuitive
+T06,controls,does the game feel clunky to control
+T07,controls,is the menu navigation smooth
