@@ -18,6 +18,18 @@ from utils import clean_text, ensure_dirs, save_jsonl
 
 API_URL = "https://store.steampowered.com/appreviews/{app_id}"
 
+import re
+
+def is_mostly_english(text, threshold=0.7):
+    english_chars = re.findall(r'[A-Za-z]', str(text))
+    total_chars = re.findall(r'\S', str(text))
+
+    if len(total_chars) == 0:
+        return False
+
+    ratio = len(english_chars) / len(total_chars)
+
+    return ratio >= threshold
 
 def load_config(path: str):
     with open(path, "r", encoding="utf-8") as f:
@@ -126,6 +138,7 @@ def main():
     df["review_text"] = df["review_text"].map(clean_text)
     df["word_count"] = df["review_text"].str.split().str.len()
     df = df[df["word_count"] >= 20].copy()
+    df = df[df["review_text"].apply(is_mostly_english)].copy()
 
     Path(args.out_raw).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(args.out_raw, index=False)
