@@ -1,0 +1,53 @@
+============================================================
+INTER-ANNOTATOR KAPPA (per aspect)
+============================================================
+
+--- COMBAT ---
+  kaki vs Tan: 0.173
+  kaki vs tianle: 0.173
+  kaki vs Tanjila: 0.067
+  Tan vs tianle: 1.000
+  Tan vs Tanjila: 0.533
+  tianle vs Tanjila: 0.533
+
+--- STORY ---
+  kaki vs Tan: 0.727
+  kaki vs tianle: 0.769
+  kaki vs Tanjila: 0.714
+  Tan vs tianle: 0.658
+  Tan vs Tanjila: 0.730
+  tianle vs Tanjila: 0.783
+
+--- GRAPHICS ---
+  kaki vs Tan: 0.432
+  kaki vs tianle: 0.661
+  kaki vs Tanjila: 0.734
+  Tan vs tianle: 0.769
+  Tan vs Tanjila: 0.684
+  tianle vs Tanjila: 0.918
+
+--- PRICE ---
+  kaki vs Tan: 0.651
+  kaki vs tianle: 0.783
+  kaki vs Tanjila: 1.000
+  Tan vs tianle: 0.474
+  Tan vs Tanjila: 0.651
+  tianle vs Tanjila: 0.783
+
+--- CONTROLS ---
+  kaki vs Tan: 0.453
+  kaki vs tianle: 0.595
+  kaki vs Tanjila: 0.194
+  Tan vs tianle: 0.911
+  Tan vs Tanjila: 0.535
+  tianle vs Tanjila: 0.468
+
+============================================================
+OVERALL KAPPA (all aspects combined)
+============================================================
+  kaki vs Tan: 0.531
+  kaki vs tianle: 0.614
+  kaki vs Tanjila: 0.492
+  Tan vs tianle: 0.808
+  Tan vs Tanjila: 0.659
+  tianle vs Tanjila: 0.703

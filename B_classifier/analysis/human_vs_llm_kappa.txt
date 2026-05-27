@@ -1,0 +1,72 @@
+Loaded rows: 30
+
+===== SAMPLE PREDICTIONS =====
+
+            human_label               llama_zeroshot  ...             mistral_zeroshot                     mistral_fewshot
+0               [story]               [price, story]  ...        [other, price, story]                      [other, story]
+1               [other]                      [other]  ...                      [other]                          [controls]
+2  [controls, graphics]  [controls, graphics, other]  ...  [controls, graphics, other]  [controls, graphics, other, price]
+3  [controls, graphics]            [graphics, other]  ...            [graphics, other]                          [graphics]
+4     [graphics, other]                      [other]  ...                      [other]                             [other]
+
+[5 rows x 5 columns]
+
+================================================
+LLM vs HUMAN KAPPA
+================================================
+
+--- COMBAT ---
+llama_zeroshot: 1.0
+llama_fewshot: 1.0
+mistral_zeroshot: 0.645
+mistral_fewshot: 0.772
+
+--- STORY ---
+llama_zeroshot: 0.789
+llama_fewshot: 0.789
+mistral_zeroshot: 1.0
+mistral_fewshot: 0.795
+
+--- GRAPHICS ---
+llama_zeroshot: 0.769
+llama_fewshot: 0.85
+mistral_zeroshot: 0.78
+mistral_fewshot: 0.85
+
+--- PRICE ---
+llama_zeroshot: 0.783
+llama_fewshot: 0.634
+mistral_zeroshot: 0.526
+mistral_fewshot: 0.38
+
+--- CONTROLS ---
+llama_zeroshot: 0.815
+llama_fewshot: 0.659
+mistral_zeroshot: 0.734
+mistral_fewshot: 0.556
+
+--- OTHER ---
+llama_zeroshot: 0.279
+llama_fewshot: 0.279
+mistral_zeroshot: 0.237
+mistral_fewshot: 0.156
+
+================================================
+OVERALL MODEL KAPPA
+================================================
+
+llama_zeroshot: 0.738
+llama_fewshot: 0.718
+mistral_zeroshot: 0.689
+mistral_fewshot: 0.62
+
+Saved:
+- outputs/llm_kappa_per_aspect.csv
+- outputs/llm_kappa_overall.csv
+
+Kappa guide:
+<0.2 slight
+0.2-0.4 fair
+0.4-0.6 moderate
+0.6-0.8 substantial
+>0.8 almost perfect

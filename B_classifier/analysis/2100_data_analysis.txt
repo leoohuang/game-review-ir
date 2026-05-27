@@ -1,0 +1,70 @@
+==============================
+ASPECT DISTRIBUTION
+==============================
+
+graphics: 1205 reviews (57.38%)
+story: 1085 reviews (51.67%)
+combat: 918 reviews (43.71%)
+other: 918 reviews (43.71%)
+controls: 597 reviews (28.43%)
+price: 521 reviews (24.81%)
+
+==============================
+PER-GAME DISTRIBUTION
+==============================
+
+
+--- Cyberpunk 2077 ---
+graphics: 277
+story: 268
+combat: 146
+other: 106
+price: 91
+controls: 64
+
+--- Elden Ring ---
+combat: 250
+graphics: 206
+story: 150
+other: 115
+controls: 80
+price: 76
+
+--- Forza Horizon 5 ---
+graphics: 251
+controls: 210
+other: 166
+price: 127
+story: 87
+combat: 27
+
+--- Hades ---
+story: 242
+combat: 218
+graphics: 202
+other: 125
+price: 69
+controls: 60
+
+--- Stardew Valley ---
+other: 312
+graphics: 118
+story: 118
+combat: 71
+price: 56
+controls: 51
+
+--- Titanfall 2 ---
+story: 220
+combat: 206
+graphics: 151
+controls: 132
+price: 102
+other: 94
+
+==============================
+MULTI-LABEL STATISTICS
+==============================
+
+Reviews with multiple aspects: 1844
+Percentage: 87.81%
