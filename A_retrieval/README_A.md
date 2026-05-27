@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # IR Game Reviews — A Module: Steam API + BM25
 
-This repository contains the **A role** pipeline for the IR project:
+This module contains the Member A pipeline for the IR project:
 
 1. Fetch English Steam reviews from the Steam Store Reviews API
 2. Clean and normalize the review corpus
@@ -73,7 +72,7 @@ Then run:
 ./run_pipeline.sh
 ```
 
-If it works, change it back to 2000–3000.
+If it works, change it back to 2000-3000.
 
 ## Outputs
 
@@ -130,7 +129,7 @@ Do commit:
 - `requirements.txt`
 - `run_pipeline.sh`
 
-Do **not** commit large generated data files:
+Do not commit large generated data files:
 
 - `data/raw/*`
 - `data/processed/*`
@@ -153,16 +152,3 @@ sleep_seconds: 1.5
 ### Forza or another game returns fewer reviews than requested
 
 That is acceptable. The script saves whatever it successfully collects.
-
-=======
-# Game Review IR
-
-## Member Division
-
-| Member | Primary Role | Specific Tasks |
-| --- | --- | --- |
-| Member A | Data & Corpus | Download and preprocess the Steam reviews dataset; filter non-English reviews, short reviews, and HTML tags; build the BM25 index; construct the 50-query set |
-| Member B | LLM Aspect Classifier | Design the prompt; implement the batch classification pipeline; validate on the 200-review annotated subset; compute Cohen's kappa; conduct error analysis |
-| Member C | Evaluation Metrics | Implement document-level and aspect-level nDCG@10; run the comparison experiment over 50 queries; conduct significance testing; produce the core results tables |
-| Member D | Demo & Paper | Develop the Streamlit demo with side-by-side comparison view; lead paper writing and presentation slides; integrate outputs from all modules |
->>>>>>> 80067c5c11b6d60c4e0341631f9d490790c8af0d

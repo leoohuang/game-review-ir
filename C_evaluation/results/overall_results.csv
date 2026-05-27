@@ -1,0 +1,3 @@
+system,relevance_type,mean_ndcg,std_ndcg,groups
+aspect_aware_rerank,aspect,0.9809523809523809,0.13701900688551374,210
+bm25,aspect,0.8756026403372883,0.20996516464103854,210

@@ -1,0 +1,11 @@
+aspect,system,relevance_type,mean_ndcg,std_ndcg,groups
+combat,aspect_aware_rerank,aspect,0.9285714285714286,0.26066118021500656,42
+combat,bm25,aspect,0.8345447876280774,0.28945656002927017,42
+controls,aspect_aware_rerank,aspect,0.9761904761904762,0.1543033499620919,42
+controls,bm25,aspect,0.8366614372713002,0.23702190828168468,42
+graphics,aspect_aware_rerank,aspect,1.0,0.0,42
+graphics,bm25,aspect,0.9362494791264917,0.09687740589452824,42
+price,aspect_aware_rerank,aspect,1.0,0.0,42
+price,bm25,aspect,0.850169663247395,0.2146158527479993,42
+story,aspect_aware_rerank,aspect,1.0,0.0,42
+story,bm25,aspect,0.9203878344131772,0.13983176551343857,42

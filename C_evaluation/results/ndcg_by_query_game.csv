@@ -1,0 +1,421 @@
+system,query_id,game,aspect,metric,relevance_type,score
+aspect_aware_rerank,C01,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C01,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C01,Forza Horizon 5,combat,ndcg@10,aspect,0.0
+aspect_aware_rerank,C01,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C01,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C01,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Forza Horizon 5,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C02,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Forza Horizon 5,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C03,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Forza Horizon 5,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C04,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C05,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C05,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C05,Forza Horizon 5,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C05,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C05,Stardew Valley,combat,ndcg@10,aspect,0.0
+aspect_aware_rerank,C05,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C06,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C06,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C06,Forza Horizon 5,combat,ndcg@10,aspect,0.0
+aspect_aware_rerank,C06,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C06,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C06,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Elden Ring,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Forza Horizon 5,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Hades,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Stardew Valley,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,C07,Titanfall 2,combat,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G01,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G02,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G03,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G04,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G05,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G06,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Elden Ring,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Hades,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Stardew Valley,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,G07,Titanfall 2,graphics,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P01,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P02,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P03,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P04,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P05,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P06,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Elden Ring,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Forza Horizon 5,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Hades,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Stardew Valley,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,P07,Titanfall 2,price,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S01,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S02,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S03,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S04,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S05,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S06,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Elden Ring,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Forza Horizon 5,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Hades,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Stardew Valley,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,S07,Titanfall 2,story,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T01,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T02,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T03,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T04,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T05,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T06,Titanfall 2,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T07,Cyberpunk 2077,controls,ndcg@10,aspect,0.0
+aspect_aware_rerank,T07,Elden Ring,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T07,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T07,Hades,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T07,Stardew Valley,controls,ndcg@10,aspect,1.0
+aspect_aware_rerank,T07,Titanfall 2,controls,ndcg@10,aspect,1.0
+bm25,C01,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+bm25,C01,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C01,Forza Horizon 5,combat,ndcg@10,aspect,0.0
+bm25,C01,Hades,combat,ndcg@10,aspect,0.977015370299312
+bm25,C01,Stardew Valley,combat,ndcg@10,aspect,0.8859509025892363
+bm25,C01,Titanfall 2,combat,ndcg@10,aspect,1.0
+bm25,C02,Cyberpunk 2077,combat,ndcg@10,aspect,0.8864065699084178
+bm25,C02,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C02,Forza Horizon 5,combat,ndcg@10,aspect,0.3154648767857287
+bm25,C02,Hades,combat,ndcg@10,aspect,0.9937947856332162
+bm25,C02,Stardew Valley,combat,ndcg@10,aspect,0.9704091209634447
+bm25,C02,Titanfall 2,combat,ndcg@10,aspect,0.977015370299312
+bm25,C03,Cyberpunk 2077,combat,ndcg@10,aspect,0.9842184869190973
+bm25,C03,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C03,Forza Horizon 5,combat,ndcg@10,aspect,0.5833416105149333
+bm25,C03,Hades,combat,ndcg@10,aspect,1.0
+bm25,C03,Stardew Valley,combat,ndcg@10,aspect,0.942018912975622
+bm25,C03,Titanfall 2,combat,ndcg@10,aspect,0.9971876401972102
+bm25,C04,Cyberpunk 2077,combat,ndcg@10,aspect,1.0
+bm25,C04,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C04,Forza Horizon 5,combat,ndcg@10,aspect,0.8503449055347546
+bm25,C04,Hades,combat,ndcg@10,aspect,1.0
+bm25,C04,Stardew Valley,combat,ndcg@10,aspect,0.8175295903539446
+bm25,C04,Titanfall 2,combat,ndcg@10,aspect,1.0
+bm25,C05,Cyberpunk 2077,combat,ndcg@10,aspect,0.913852335159709
+bm25,C05,Elden Ring,combat,ndcg@10,aspect,0.9196461703481416
+bm25,C05,Forza Horizon 5,combat,ndcg@10,aspect,0.3562071871080222
+bm25,C05,Hades,combat,ndcg@10,aspect,0.8118374955798289
+bm25,C05,Stardew Valley,combat,ndcg@10,aspect,0.0
+bm25,C05,Titanfall 2,combat,ndcg@10,aspect,0.8631997506525685
+bm25,C06,Cyberpunk 2077,combat,ndcg@10,aspect,0.9704091209634447
+bm25,C06,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C06,Forza Horizon 5,combat,ndcg@10,aspect,0.0
+bm25,C06,Hades,combat,ndcg@10,aspect,1.0
+bm25,C06,Stardew Valley,combat,ndcg@10,aspect,1.0
+bm25,C06,Titanfall 2,combat,ndcg@10,aspect,1.0
+bm25,C07,Cyberpunk 2077,combat,ndcg@10,aspect,0.8631997506525685
+bm25,C07,Elden Ring,combat,ndcg@10,aspect,1.0
+bm25,C07,Forza Horizon 5,combat,ndcg@10,aspect,0.5
+bm25,C07,Hades,combat,ndcg@10,aspect,0.9963488021549354
+bm25,C07,Stardew Valley,combat,ndcg@10,aspect,0.6782946845885879
+bm25,C07,Titanfall 2,combat,ndcg@10,aspect,0.9971876401972102
+bm25,G01,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+bm25,G01,Elden Ring,graphics,ndcg@10,aspect,1.0
+bm25,G01,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+bm25,G01,Hades,graphics,ndcg@10,aspect,1.0
+bm25,G01,Stardew Valley,graphics,ndcg@10,aspect,1.0
+bm25,G01,Titanfall 2,graphics,ndcg@10,aspect,1.0
+bm25,G02,Cyberpunk 2077,graphics,ndcg@10,aspect,0.9937947856332162
+bm25,G02,Elden Ring,graphics,ndcg@10,aspect,0.9512312000626861
+bm25,G02,Forza Horizon 5,graphics,ndcg@10,aspect,0.9895948844467957
+bm25,G02,Hades,graphics,ndcg@10,aspect,0.6897971642557428
+bm25,G02,Stardew Valley,graphics,ndcg@10,aspect,0.7890424563070346
+bm25,G02,Titanfall 2,graphics,ndcg@10,aspect,0.9842184869190973
+bm25,G03,Cyberpunk 2077,graphics,ndcg@10,aspect,0.9842184869190973
+bm25,G03,Elden Ring,graphics,ndcg@10,aspect,0.9752652438087496
+bm25,G03,Forza Horizon 5,graphics,ndcg@10,aspect,0.9531641314941091
+bm25,G03,Hades,graphics,ndcg@10,aspect,0.9971876401972102
+bm25,G03,Stardew Valley,graphics,ndcg@10,aspect,0.7698461250098078
+bm25,G03,Titanfall 2,graphics,ndcg@10,aspect,0.9667147927059906
+bm25,G04,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+bm25,G04,Elden Ring,graphics,ndcg@10,aspect,0.9705437052559006
+bm25,G04,Forza Horizon 5,graphics,ndcg@10,aspect,0.9196461703481416
+bm25,G04,Hades,graphics,ndcg@10,aspect,0.8045807465184766
+bm25,G04,Stardew Valley,graphics,ndcg@10,aspect,0.839653887821725
+bm25,G04,Titanfall 2,graphics,ndcg@10,aspect,0.9747429528567879
+bm25,G05,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+bm25,G05,Elden Ring,graphics,ndcg@10,aspect,1.0
+bm25,G05,Forza Horizon 5,graphics,ndcg@10,aspect,0.9971876401972102
+bm25,G05,Hades,graphics,ndcg@10,aspect,0.9274624750390078
+bm25,G05,Stardew Valley,graphics,ndcg@10,aspect,0.6462302129493455
+bm25,G05,Titanfall 2,graphics,ndcg@10,aspect,0.9963488021549354
+bm25,G06,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+bm25,G06,Elden Ring,graphics,ndcg@10,aspect,0.9642409754030941
+bm25,G06,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+bm25,G06,Hades,graphics,ndcg@10,aspect,0.9331394899761785
+bm25,G06,Stardew Valley,graphics,ndcg@10,aspect,0.928459183194549
+bm25,G06,Titanfall 2,graphics,ndcg@10,aspect,0.9384745935215792
+bm25,G07,Cyberpunk 2077,graphics,ndcg@10,aspect,1.0
+bm25,G07,Elden Ring,graphics,ndcg@10,aspect,0.8165229378311881
+bm25,G07,Forza Horizon 5,graphics,ndcg@10,aspect,1.0
+bm25,G07,Hades,graphics,ndcg@10,aspect,0.9504206262110481
+bm25,G07,Stardew Valley,graphics,ndcg@10,aspect,0.6811534418271473
+bm25,G07,Titanfall 2,graphics,ndcg@10,aspect,0.9895948844467957
+bm25,P01,Cyberpunk 2077,price,ndcg@10,aspect,1.0
+bm25,P01,Elden Ring,price,ndcg@10,aspect,1.0
+bm25,P01,Forza Horizon 5,price,ndcg@10,aspect,1.0
+bm25,P01,Hades,price,ndcg@10,aspect,1.0
+bm25,P01,Stardew Valley,price,ndcg@10,aspect,1.0
+bm25,P01,Titanfall 2,price,ndcg@10,aspect,1.0
+bm25,P02,Cyberpunk 2077,price,ndcg@10,aspect,0.9667147927059906
+bm25,P02,Elden Ring,price,ndcg@10,aspect,0.9933222998814618
+bm25,P02,Forza Horizon 5,price,ndcg@10,aspect,1.0
+bm25,P02,Hades,price,ndcg@10,aspect,1.0
+bm25,P02,Stardew Valley,price,ndcg@10,aspect,0.9371072971649781
+bm25,P02,Titanfall 2,price,ndcg@10,aspect,1.0
+bm25,P03,Cyberpunk 2077,price,ndcg@10,aspect,0.8002671129756276
+bm25,P03,Elden Ring,price,ndcg@10,aspect,0.8993515008051188
+bm25,P03,Forza Horizon 5,price,ndcg@10,aspect,0.9181890364255552
+bm25,P03,Hades,price,ndcg@10,aspect,0.7588991106880892
+bm25,P03,Stardew Valley,price,ndcg@10,aspect,0.2890648263178878
+bm25,P03,Titanfall 2,price,ndcg@10,aspect,0.8993515008051188
+bm25,P04,Cyberpunk 2077,price,ndcg@10,aspect,0.5730008572581421
+bm25,P04,Elden Ring,price,ndcg@10,aspect,0.3562071871080222
+bm25,P04,Forza Horizon 5,price,ndcg@10,aspect,0.9519709359886506
+bm25,P04,Hades,price,ndcg@10,aspect,0.4306765580733931
+bm25,P04,Stardew Valley,price,ndcg@10,aspect,0.7903864795495061
+bm25,P04,Titanfall 2,price,ndcg@10,aspect,0.6746579650586143
+bm25,P05,Cyberpunk 2077,price,ndcg@10,aspect,0.9842184869190973
+bm25,P05,Elden Ring,price,ndcg@10,aspect,0.9971876401972102
+bm25,P05,Forza Horizon 5,price,ndcg@10,aspect,1.0
+bm25,P05,Hades,price,ndcg@10,aspect,1.0
+bm25,P05,Stardew Valley,price,ndcg@10,aspect,1.0
+bm25,P05,Titanfall 2,price,ndcg@10,aspect,1.0
+bm25,P06,Cyberpunk 2077,price,ndcg@10,aspect,0.8603443310417203
+bm25,P06,Elden Ring,price,ndcg@10,aspect,0.48247555939075515
+bm25,P06,Forza Horizon 5,price,ndcg@10,aspect,0.456468383308964
+bm25,P06,Hades,price,ndcg@10,aspect,0.5912352048230277
+bm25,P06,Stardew Valley,price,ndcg@10,aspect,0.44130740935663865
+bm25,P06,Titanfall 2,price,ndcg@10,aspect,0.7737459235132746
+bm25,P07,Cyberpunk 2077,price,ndcg@10,aspect,0.9842184869190973
+bm25,P07,Elden Ring,price,ndcg@10,aspect,1.0
+bm25,P07,Forza Horizon 5,price,ndcg@10,aspect,1.0
+bm25,P07,Hades,price,ndcg@10,aspect,0.9918291064614978
+bm25,P07,Stardew Valley,price,ndcg@10,aspect,0.904927863653148
+bm25,P07,Titanfall 2,price,ndcg@10,aspect,1.0
+bm25,S01,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+bm25,S01,Elden Ring,story,ndcg@10,aspect,0.8703926507944851
+bm25,S01,Forza Horizon 5,story,ndcg@10,aspect,0.9429942892150167
+bm25,S01,Hades,story,ndcg@10,aspect,1.0
+bm25,S01,Stardew Valley,story,ndcg@10,aspect,0.8165703135829331
+bm25,S01,Titanfall 2,story,ndcg@10,aspect,0.9971876401972102
+bm25,S02,Cyberpunk 2077,story,ndcg@10,aspect,0.9937947856332162
+bm25,S02,Elden Ring,story,ndcg@10,aspect,1.0
+bm25,S02,Forza Horizon 5,story,ndcg@10,aspect,0.8753369846165927
+bm25,S02,Hades,story,ndcg@10,aspect,1.0
+bm25,S02,Stardew Valley,story,ndcg@10,aspect,0.9404511968899847
+bm25,S02,Titanfall 2,story,ndcg@10,aspect,0.9705437052559006
+bm25,S03,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+bm25,S03,Elden Ring,story,ndcg@10,aspect,1.0
+bm25,S03,Forza Horizon 5,story,ndcg@10,aspect,1.0
+bm25,S03,Hades,story,ndcg@10,aspect,0.9196461703481416
+bm25,S03,Stardew Valley,story,ndcg@10,aspect,0.9504206262110481
+bm25,S03,Titanfall 2,story,ndcg@10,aspect,1.0
+bm25,S04,Cyberpunk 2077,story,ndcg@10,aspect,0.9135277613190136
+bm25,S04,Elden Ring,story,ndcg@10,aspect,0.7271360547643255
+bm25,S04,Forza Horizon 5,story,ndcg@10,aspect,0.5173087569496825
+bm25,S04,Hades,story,ndcg@10,aspect,0.9895948844467957
+bm25,S04,Stardew Valley,story,ndcg@10,aspect,0.6821597128635729
+bm25,S04,Titanfall 2,story,ndcg@10,aspect,0.9918291064614978
+bm25,S05,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+bm25,S05,Elden Ring,story,ndcg@10,aspect,1.0
+bm25,S05,Forza Horizon 5,story,ndcg@10,aspect,0.3618149835636159
+bm25,S05,Hades,story,ndcg@10,aspect,1.0
+bm25,S05,Stardew Valley,story,ndcg@10,aspect,0.9937947856332162
+bm25,S05,Titanfall 2,story,ndcg@10,aspect,0.9384745935215792
+bm25,S06,Cyberpunk 2077,story,ndcg@10,aspect,0.9971876401972102
+bm25,S06,Elden Ring,story,ndcg@10,aspect,0.859193553938637
+bm25,S06,Forza Horizon 5,story,ndcg@10,aspect,0.9838048780283076
+bm25,S06,Hades,story,ndcg@10,aspect,1.0
+bm25,S06,Stardew Valley,story,ndcg@10,aspect,0.6718536598421432
+bm25,S06,Titanfall 2,story,ndcg@10,aspect,0.8328978515038054
+bm25,S07,Cyberpunk 2077,story,ndcg@10,aspect,1.0
+bm25,S07,Elden Ring,story,ndcg@10,aspect,0.9752652438087496
+bm25,S07,Forza Horizon 5,story,ndcg@10,aspect,0.9971876401972102
+bm25,S07,Hades,story,ndcg@10,aspect,0.9842184869190973
+bm25,S07,Stardew Valley,story,ndcg@10,aspect,0.961701088650451
+bm25,S07,Titanfall 2,story,ndcg@10,aspect,1.0
+bm25,T01,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+bm25,T01,Elden Ring,controls,ndcg@10,aspect,1.0
+bm25,T01,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+bm25,T01,Hades,controls,ndcg@10,aspect,0.9895948844467957
+bm25,T01,Stardew Valley,controls,ndcg@10,aspect,1.0
+bm25,T01,Titanfall 2,controls,ndcg@10,aspect,1.0
+bm25,T02,Cyberpunk 2077,controls,ndcg@10,aspect,0.3706656904013185
+bm25,T02,Elden Ring,controls,ndcg@10,aspect,0.7945039219825194
+bm25,T02,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+bm25,T02,Hades,controls,ndcg@10,aspect,0.9176551163528843
+bm25,T02,Stardew Valley,controls,ndcg@10,aspect,0.4306765580733931
+bm25,T02,Titanfall 2,controls,ndcg@10,aspect,0.9669850519151656
+bm25,T03,Cyberpunk 2077,controls,ndcg@10,aspect,0.7678329270936477
+bm25,T03,Elden Ring,controls,ndcg@10,aspect,0.9279641043683683
+bm25,T03,Forza Horizon 5,controls,ndcg@10,aspect,0.9560094522876519
+bm25,T03,Hades,controls,ndcg@10,aspect,0.5883300173403989
+bm25,T03,Stardew Valley,controls,ndcg@10,aspect,0.48600899002787085
+bm25,T03,Titanfall 2,controls,ndcg@10,aspect,0.7977228895450267
+bm25,T04,Cyberpunk 2077,controls,ndcg@10,aspect,1.0
+bm25,T04,Elden Ring,controls,ndcg@10,aspect,0.9895948844467957
+bm25,T04,Forza Horizon 5,controls,ndcg@10,aspect,1.0
+bm25,T04,Hades,controls,ndcg@10,aspect,0.9895948844467957
+bm25,T04,Stardew Valley,controls,ndcg@10,aspect,1.0
+bm25,T04,Titanfall 2,controls,ndcg@10,aspect,1.0
+bm25,T05,Cyberpunk 2077,controls,ndcg@10,aspect,0.9937947856332162
+bm25,T05,Elden Ring,controls,ndcg@10,aspect,0.9895948844467957
+bm25,T05,Forza Horizon 5,controls,ndcg@10,aspect,0.9895948844467957
+bm25,T05,Hades,controls,ndcg@10,aspect,0.9613085758737654
+bm25,T05,Stardew Valley,controls,ndcg@10,aspect,0.9504206262110481
+bm25,T05,Titanfall 2,controls,ndcg@10,aspect,1.0
+bm25,T06,Cyberpunk 2077,controls,ndcg@10,aspect,0.7529716549381369
+bm25,T06,Elden Ring,controls,ndcg@10,aspect,0.9937947856332162
+bm25,T06,Forza Horizon 5,controls,ndcg@10,aspect,0.9459073824327567
+bm25,T06,Hades,controls,ndcg@10,aspect,0.975788054854922
+bm25,T06,Stardew Valley,controls,ndcg@10,aspect,0.6980646980039836
+bm25,T06,Titanfall 2,controls,ndcg@10,aspect,0.9199753853803091
+bm25,T07,Cyberpunk 2077,controls,ndcg@10,aspect,0.0
+bm25,T07,Elden Ring,controls,ndcg@10,aspect,0.5508095940041027
+bm25,T07,Forza Horizon 5,controls,ndcg@10,aspect,0.8900174613068491
+bm25,T07,Hades,controls,ndcg@10,aspect,0.38685280723454163
+bm25,T07,Stardew Valley,controls,ndcg@10,aspect,0.6710022092790503
+bm25,T07,Titanfall 2,controls,ndcg@10,aspect,0.4967432029864876
