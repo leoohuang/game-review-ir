@@ -4,7 +4,7 @@ This is useful when the available human annotation file labels reviews by aspect
 instead of directly judging each query-result pair. For every retrieved result
 whose ``review_id`` appears in the annotation file, the script assigns:
 
-- aspect_relevance = 2 if the query aspect is in the human labels
+- aspect_relevance = 1 if the query aspect is in the human labels
 - aspect_relevance = 0 otherwise
 
 It does not create document-level relevance because the source file does not
@@ -61,7 +61,7 @@ def main() -> None:
     judged = judged.merge(annotations[["review_id", "human_label_set"]], on="review_id", how="inner")
 
     judged["aspect_relevance"] = judged.apply(
-        lambda row: 2 if row["aspect"] in row["human_label_set"] else 0,
+        lambda row: 1 if row["aspect"] in row["human_label_set"] else 0,
         axis=1,
     )
 

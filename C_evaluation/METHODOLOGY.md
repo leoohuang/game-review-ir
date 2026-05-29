@@ -56,7 +56,7 @@ Sorting rule:
 
 ## Relevance Definition
 
-The revised project plan does not use full human retrieval relevance annotation.
+The revised project plan does not use full human retrieval relevance annotation or three-level relevance grading.
 
 For aspect-level evaluation, a retrieved review is considered relevant if:
 
@@ -64,11 +64,11 @@ For aspect-level evaluation, a retrieved review is considered relevant if:
 query aspect is in predicted_aspects
 ```
 
-The graded relevance value is:
+The binary relevance value is:
 
 | Condition | aspect_relevance |
 | --- | ---: |
-| query aspect appears in predicted aspects | 2 |
+| query aspect appears in predicted aspects | 1 |
 | query aspect does not appear in predicted aspects | 0 |
 
 ## Metric

@@ -24,7 +24,7 @@ Two relevance views are supported:
 | `doc_relevance` | Optional human qrels field: whether the review is useful/relevant for the query overall |
 | `aspect_relevance` | Whether the review discusses the requested aspect |
 
-The final project plan does not require full human retrieval qrels. Instead, C evaluates aspect-level retrieval by using each query's aspect as the ground truth target and Member B's final LLM aspect labels as the document aspect signal.
+The final project plan does not require full human retrieval qrels. Instead, C evaluates binary aspect-level retrieval by using each query's aspect as the ground truth target and Member B's final LLM aspect labels as the document aspect signal.
 
 The script still supports optional human qrels if the team later decides to add retrieval-level judgments.
 
@@ -51,13 +51,12 @@ query_id,game,review_id,aspect_relevance
 
 At least one of `doc_relevance` or `aspect_relevance` is required when using `--qrels`.
 
-Use graded labels such as:
+Use binary labels:
 
 | Label | Meaning |
 |---|---|
-| 0 | not relevant |
-| 1 | somewhat relevant |
-| 2 | highly relevant |
+| 0 | aspect absent / not relevant |
+| 1 | aspect present / relevant |
 
 ## Run
 

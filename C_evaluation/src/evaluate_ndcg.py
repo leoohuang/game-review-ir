@@ -105,7 +105,7 @@ def attach_relevance(df: pd.DataFrame, qrels_path: str | None) -> tuple[pd.DataF
     # Query-aspect relevance for the final project setup:
     # a retrieved review is relevant when the best LLM classifier says it contains
     # the aspect requested by the query.
-    df["aspect_relevance"] = np.where(df["aspect_match"], 2, 0)
+    df["aspect_relevance"] = np.where(df["aspect_match"], 1, 0)
     return df, "query_aspect_from_llm_predictions"
 
 
