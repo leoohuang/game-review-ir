@@ -39,6 +39,12 @@ This file keeps the retrieval columns and adds:
 
 These predicted aspects are the document-side aspect signal used by Member C.
 
+Member B's classifier selection was updated after evaluating four LLM
+configurations against the 230-review gold-standard annotation set in
+`B_classifier/annotations/final_gold_230.csv`. The best configuration was
+Llama 3.3 70B zero-shot with overall Cohen's kappa `0.540`; this is the
+classifier used to produce `final_2100_predictions.csv`.
+
 ## Systems Compared
 
 ### BM25 Baseline
@@ -100,3 +106,9 @@ The script uses a two-sided paired sign-flip permutation test.
 | Aspect-aware rerank minus BM25 | 0.1053 | 0.0001 |
 
 The result suggests that incorporating LLM-predicted aspect labels improves aspect-focused retrieval quality.
+
+Because the relevance signal is derived from LLM-predicted aspect labels rather
+than full human retrieval judgments, these scores should be interpreted as
+aspect-consistency evaluation. The expanded 230-review validation increases
+confidence in the classifier signal, but residual classification noise remains,
+especially for the broad `other` category.

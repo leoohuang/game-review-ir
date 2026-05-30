@@ -26,6 +26,8 @@ Two relevance views are supported:
 
 The final project plan does not require full human retrieval qrels. Instead, C evaluates binary aspect-level retrieval by using each query's aspect as the ground truth target and Member B's final LLM aspect labels as the document aspect signal.
 
+Member B's final classifier was selected using the expanded 230-review gold set (`B_classifier/annotations/final_gold_230.csv`). The selected model is Llama 3.3 70B zero-shot with overall Human-vs-LLM Cohen's kappa `0.540`.
+
 The script still supports optional human qrels if the team later decides to add retrieval-level judgments.
 
 ## Inputs
@@ -85,11 +87,11 @@ python3 C_evaluation/src/evaluate_ndcg.py \
   --qrels C_evaluation/data/retrieval_qrels.csv
 ```
 
-If the only available human file is the small aspect annotation workbook, convert it first:
+If the available human file is the 230-review aspect annotation CSV, convert it first:
 
 ```bash
 python3 C_evaluation/src/convert_aspect_labels_to_qrels.py \
-  --annotation "/Users/leohuang/Downloads/aspect_annotation_30 (1).xlsx"
+  --annotation B_classifier/annotations/final_gold_230.csv
 
 python3 C_evaluation/src/evaluate_ndcg.py \
   --qrels C_evaluation/data/aspect_label_qrels.csv

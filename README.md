@@ -14,13 +14,13 @@ The project is organized as a four-part IR pipeline:
 | Member | Primary Role | Specific Tasks |
 | --- | --- | --- |
 | Member A | Data & Corpus | Download and preprocess the Steam reviews dataset; filter non-English reviews, short reviews, and HTML tags; build the BM25 index; construct the 35-query set |
-| Member B | LLM Aspect Classifier | Design the prompt; implement the batch classification pipeline; validate on the 200-review annotated subset; compute Cohen's kappa; conduct error analysis |
+| Member B | LLM Aspect Classifier | Design the prompt; implement the batch classification pipeline; validate on the 230-review gold-standard subset; compute Cohen's kappa; conduct error analysis |
 | Member C | Evaluation Metrics | Implement aspect-level nDCG@10; run the comparison experiment over 35 queries; conduct significance testing; produce the core results tables |
 | Member D | Demo & Paper | Develop the Streamlit demo with side-by-side comparison view; lead paper writing and presentation slides; integrate outputs from all modules |
 
 ## Current Member C Results
 
-Member C's final setup uses `B_classifier/outputs/final_2100_predictions.csv` as input. A retrieved review is treated as aspect-relevant when its LLM-predicted aspect labels contain the target aspect of the query.
+Member C's final setup uses `B_classifier/outputs/final_2100_predictions.csv` as input. A retrieved review is treated as aspect-relevant when its LLM-predicted aspect labels contain the target aspect of the query. The aspect classifier was selected after Member B's 230-review Human-vs-LLM evaluation; the best configuration is Llama 3.3 70B zero-shot with overall Cohen's kappa `0.540`.
 
 | System | Aspect nDCG@10 |
 | --- | ---: |

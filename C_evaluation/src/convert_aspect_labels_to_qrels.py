@@ -19,7 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 
-DEFAULT_ANNOTATION = "/Users/leohuang/Downloads/aspect_annotation_30 (1).xlsx"
+DEFAULT_ANNOTATION = "B_classifier/annotations/final_gold_230.csv"
 DEFAULT_RETRIEVAL = "B_classifier/outputs/final_2100_predictions.csv"
 DEFAULT_OUTPUT = "C_evaluation/data/aspect_label_qrels.csv"
 
@@ -32,6 +32,13 @@ def parse_labels(value: object) -> set[str]:
     return {label.strip() for label in labels if label.strip()}
 
 
+def load_annotations(path: str) -> pd.DataFrame:
+    annotation_path = Path(path)
+    if annotation_path.suffix.lower() in {".xlsx", ".xls"}:
+        return pd.read_excel(annotation_path)
+    return pd.read_csv(annotation_path)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--annotation", default=DEFAULT_ANNOTATION)
@@ -39,10 +46,11 @@ def main() -> None:
     parser.add_argument("--output", default=DEFAULT_OUTPUT)
     args = parser.parse_args()
 
-    annotations = pd.read_excel(args.annotation)
+    annotations = load_annotations(args.annotation)
     retrieval = pd.read_csv(args.retrieval)
 
-    required_annotation = {"review_id", "human_label"}
+    label_column = "human_label" if "human_label" in annotations.columns else "aspect_labels"
+    required_annotation = {"review_id", label_column}
     required_retrieval = {"query_id", "game", "review_id", "aspect"}
     missing_annotation = required_annotation - set(annotations.columns)
     missing_retrieval = required_retrieval - set(retrieval.columns)
@@ -51,9 +59,9 @@ def main() -> None:
     if missing_retrieval:
         raise ValueError(f"Retrieval file is missing columns: {sorted(missing_retrieval)}")
 
-    annotations = annotations[["review_id", "human_label"]].copy()
+    annotations = annotations[["review_id", label_column]].copy()
     annotations["review_id"] = annotations["review_id"].astype(str)
-    annotations["human_label_set"] = annotations["human_label"].apply(parse_labels)
+    annotations["human_label_set"] = annotations[label_column].apply(parse_labels)
 
     judged = retrieval.copy()
     judged["review_id"] = judged["review_id"].astype(str)
