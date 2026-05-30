@@ -7,7 +7,8 @@ from sklearn.metrics import cohen_kappa_score
 # CONFIG
 # =========================
 
-INPUT_FILE = "outputs/berget_classified.csv"
+# INPUT_FILE = "outputs/berget_classified.csv"
+INPUT_FILE = "./game-review-ir/B_classifier/outputs/berget_classified_230.csv"
 
 ASPECTS = [
     "combat",
@@ -57,7 +58,7 @@ def safe_parse(x):
 # PARSE ALL COLUMNS
 # =========================
 
-df["human_label"] = df["human_label"].apply(safe_parse)
+df["aspect_labels"] = df["aspect_labels"].apply(safe_parse)
 
 for model in MODELS:
     df[model] = df[model].apply(safe_parse)
@@ -69,7 +70,7 @@ for model in MODELS:
 print("\n===== SAMPLE PREDICTIONS =====\n")
 
 sample_cols = [
-    "human_label",
+    "aspect_labels",
     "llama_zeroshot",
     "llama_fewshot",
     "mistral_zeroshot",
@@ -114,7 +115,7 @@ for aspect in ASPECTS:
 
     print(f"--- {aspect.upper()} ---")
 
-    human_binary = df["human_label"].apply(
+    human_binary = df["aspect_labels"].apply(
         lambda x: 1 if aspect in x else 0
     )
 
@@ -156,7 +157,7 @@ for model in MODELS:
 
     for aspect in ASPECTS:
 
-        human_binary = df["human_label"].apply(
+        human_binary = df["aspect_labels"].apply(
             lambda x: 1 if aspect in x else 0
         )
 
@@ -188,18 +189,18 @@ results_df = pd.DataFrame(results)
 overall_df = pd.DataFrame(overall_results)
 
 results_df.to_csv(
-    "outputs/llm_kappa_per_aspect.csv",
+    "./game-review-ir/B_classifier/outputs/llm_kappa_per_aspect.csv",
     index=False
 )
 
 overall_df.to_csv(
-    "outputs/llm_kappa_overall.csv",
+    "./game-review-ir/B_classifier/outputs/llm_kappa_overall.csv",
     index=False
 )
 
 print("\nSaved:")
-print("- outputs/llm_kappa_per_aspect.csv")
-print("- outputs/llm_kappa_overall.csv")
+print("- ./game-review-ir/B_classifier/outputs/llm_kappa_per_aspect.csv")
+print("- ./game-review-ir/B_classifier/outputs/llm_kappa_overall.csv")
 
 print("\nKappa guide:")
 print("<0.2 slight")

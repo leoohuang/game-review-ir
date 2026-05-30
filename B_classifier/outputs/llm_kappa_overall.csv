@@ -1,5 +1,5 @@
 model,overall_kappa
-llama_zeroshot,0.738
-llama_fewshot,0.718
-mistral_zeroshot,0.689
-mistral_fewshot,0.62
+llama_zeroshot,0.54
+llama_fewshot,0.51
+mistral_zeroshot,0.473
+mistral_fewshot,0.399

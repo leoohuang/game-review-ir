@@ -32,8 +32,11 @@ ASPECTS = [
 LLAMA = "meta-llama/Llama-3.3-70B-Instruct"
 MISTRAL = "mistralai/Mistral-Small-3.2-24B-Instruct-2506"
 
-INPUT_FILE = "annotations/final_gold.csv"
-OUTPUT_FILE = "outputs/berget_classified.csv"
+# INPUT_FILE = "annotations/final_gold.csv"
+# OUTPUT_FILE = "outputs/berget_classified.csv"
+
+INPUT_FILE = "./game-review-ir/B_classifier/annotations/final_gold_230.csv"
+OUTPUT_FILE = "./game-review-ir/B_classifier/outputs/berget_classified_230.csv"
 
 SAVE_EVERY = 5
 WAIT_TIME = 1

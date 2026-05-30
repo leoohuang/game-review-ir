@@ -2,181 +2,192 @@
 
 ## Overview
 
-This module implements the LLM-based aspect classification pipeline for the Game Review IR project.
+This module implements the LLM-based aspect classification component of the Game Review IR project.
 
-The main goal of this component is to classify Steam game reviews into gameplay-related aspects using prompt-based Large Language Models (LLMs).
+The objective is to automatically identify gameplay-related aspects discussed in Steam reviews using prompt-based Large Language Models (LLMs). The resulting aspect labels are later used to support retrieval evaluation and aspect-aware analysis.
 
-The implemented system supports:
+### Implemented Features
 
+- Multi-label aspect classification
 - Zero-shot prompting
 - Few-shot prompting
-- Multi-label aspect classification
-- Multi-model comparison
-- Human annotation evaluation
-- Cohen’s Kappa agreement analysis
-- Large-scale inference over 2100 retrieved reviews
-
----
-
-# Classification Aspects
-
-The following aspect labels were used:
-
-| Aspect | Description |
-|---|---|
-| combat | Gameplay mechanics, bosses, fighting, weapons, builds, difficulty |
-| story | Narrative, lore, dialogue, characters, endings |
-| graphics | Visual quality, atmosphere, FPS, world design, performance |
-| price | DLC, value, sales, worth buying |
-| controls | Movement, responsiveness, aiming, driving, UI |
-| other | Emotional or vague opinions without explicit aspect discussion |
-
-The task was implemented as a **multi-label classification problem**, since a single review may discuss multiple aspects simultaneously.
+- Multiple LLM backbones
+- Human annotation and validation
+- Inter-annotator agreement analysis
+- Human-vs-LLM evaluation
+- Large-scale inference over retrieved reviews
 
 ---
 
 # Human Annotation
 
-A shared human annotation process was conducted to build a gold-standard dataset.
+## Phase 1: Shared Annotation
 
-## Annotation Setup
+A shared annotation set consisting of **30 reviews** was independently annotated by all four group members.
 
-- 30 shared reviews were jointly annotated by all group members
-- Multiple labels per review were allowed
-- Annotation disagreements were analyzed using Cohen’s Kappa
+This dataset was used to:
 
-## Human Agreement Results
+- Refine annotation guidelines
+- Resolve labeling ambiguities
+- Compute inter-annotator agreement
+- Validate LLM classification quality
 
-Inter-annotator agreement showed moderate to substantial agreement across most aspects.
+## Phase 2: Extended Annotation
 
-Key observations:
+After establishing annotation guidelines, each annotator independently labeled **50 additional reviews**.
 
-- Story and graphics achieved strong agreement
-- Controls and combat showed more ambiguity
-- Overlap between gameplay and general praise caused some disagreements
+### Dataset Composition
 
-Human annotation files:
+| Source | Reviews |
+|----------|----------|
+| Shared Annotation Set | 30 |
+| Annotator A | 50 |
+| Annotator B | 50 |
+| Annotator C | 50 |
+| Annotator D | 50 |
+| **Total Gold Dataset** | **230** |
+
+Final dataset:
 
 ```text
-annotations/final_gold.csv
-analysis/human_kappa_results.txt
+annotations/final_gold_230.csv
 ```
 
 ---
 
-# Prompt Engineering
+# Aspect Taxonomy
 
-Two prompting strategies were implemented and compared:
+| Aspect | Description |
+|----------|----------|
+| combat | Gameplay mechanics, bosses, fighting, weapons, builds, difficulty |
+| story | Narrative, lore, dialogue, characters, endings |
+| graphics | Visual quality, atmosphere, FPS, performance, bugs, world design |
+| price | DLC, value, sales, worth buying |
+| controls | Movement, responsiveness, driving, aiming, UI, camera |
+| other | Emotional or vague opinions without explicit aspect discussion |
 
-## 1. Zero-shot Prompting
-
-The model receives:
-
-- Aspect definitions
-- Task instructions
-- Review text
-
-No examples are provided.
-
-## 2. Few-shot Prompting
-
-The model receives:
-
-- Aspect definitions
-- Several labeled examples
-- Review text
-
-The purpose was to evaluate whether examples improve classification quality.
+The task was implemented as a **multi-label classification problem** because a review may discuss multiple aspects simultaneously.
 
 ---
 
-# Models Used
+# Prompting Strategies
 
-The following LLMs were evaluated using Berget AI:
+Two prompting strategies were evaluated.
 
-| Model | Type |
-|---|---|
-| Llama 3.3 70B Instruct | Large instruction-tuned model |
-| Mistral Small 3.2 24B | Instruction-tuned model |
+## Zero-shot Prompting
 
-Each model was tested under:
+The model receives:
 
-- Zero-shot prompting
-- Few-shot prompting
+- Aspect definitions
+- Classification instructions
+- Review text
+
+No labeled examples are provided.
+
+## Few-shot Prompting
+
+The model receives:
+
+- Aspect definitions
+- Multiple labeled examples
+- Review text
+
+The goal is to determine whether demonstrations improve classification quality.
+
+---
+
+# Models Evaluated
+
+The following models were evaluated through Berget AI:
+
+| Model | Configuration |
+|----------|----------|
+| Llama 3.3 70B Instruct | Zero-shot |
+| Llama 3.3 70B Instruct | Few-shot |
+| Mistral Small 3.2 24B | Zero-shot |
+| Mistral Small 3.2 24B | Few-shot |
 
 ---
 
 # Evaluation Methodology
 
-The predictions generated by the models were compared against the human gold annotations using:
+The four model configurations were evaluated against the 230-review gold-standard dataset.
 
-## Cohen’s Kappa
+### Metric
 
-Cohen’s Kappa was selected because:
+**Cohen's Kappa (κ)**
 
-- The task is subjective
-- Multiple labels are allowed
-- Agreement beyond chance is important
+### Interpretation
 
-Kappa interpretation:
-
-| Range | Interpretation |
-|---|---|
-| <0.2 | Slight |
-| 0.2–0.4 | Fair |
-| 0.4–0.6 | Moderate |
-| 0.6–0.8 | Substantial |
-| >0.8 | Almost Perfect |
+| Kappa | Interpretation |
+|----------|----------|
+| < 0.20 | Slight |
+| 0.20 – 0.40 | Fair |
+| 0.40 – 0.60 | Moderate |
+| 0.60 – 0.80 | Substantial |
+| > 0.80 | Almost Perfect |
 
 ---
 
-# Final Evaluation Results
+# Human vs LLM Evaluation Results
 
-## Overall Model Kappa
+## Overall Model Performance
 
 | Model | Overall Kappa |
-|---|---|
-| Llama Zero-shot | 0.738 |
-| Llama Few-shot | 0.718 |
-| Mistral Zero-shot | 0.689 |
-| Mistral Few-shot | 0.620 |
+|----------|----------|
+| **Llama Zero-shot** | **0.540** |
+| Llama Few-shot | 0.510 |
+| Mistral Zero-shot | 0.473 |
+| Mistral Few-shot | 0.399 |
 
-## Key Findings
+### Best Model
 
-- Llama Zero-shot achieved the best overall performance
-- Few-shot prompting improved some nuanced aspects such as graphics
-- Zero-shot prompting generalized better overall
-- The “other” category remained difficult due to vague emotional reviews
-
-Evaluation outputs:
+**Llama 3.3 70B Zero-shot** achieved the highest agreement with human annotations:
 
 ```text
-outputs/llm_kappa_overall.csv
-outputs/llm_kappa_per_aspect.csv
-analysis/human_vs_llm_kappa.txt
+κ = 0.540
 ```
+
+Therefore, Llama Zero-shot was selected as the final classification model used in downstream experiments.
+
+---
+
+## Per-Aspect Performance
+
+| Aspect | Best Kappa |
+|----------|----------|
+| Story | 0.767 |
+| Graphics | 0.613 |
+| Controls | 0.572 |
+| Price | 0.539 |
+| Combat | 0.502 |
+| Other | 0.215 |
+
+### Observations
+
+- Story was the easiest aspect to identify
+- Graphics and controls showed consistent performance
+- Combat and price achieved moderate agreement
+- The "other" category remained difficult due to its subjective nature
 
 ---
 
 # Large-Scale Inference
 
-After evaluation, the best-performing setup (Llama Zero-shot) was applied to the full retrieval dataset.
+After model selection, the best-performing model (**Llama Zero-shot**) was applied to the full retrieval dataset.
 
-## Dataset
+### Dataset
 
-- 2100 Steam reviews
-- Retrieved using BM25 pipeline from Member A
-- Reviews from:
-  - Elden Ring
+- 2100 retrieved Steam reviews
+- Six game domains:
   - Cyberpunk 2077
-  - Stardew Valley
+  - Elden Ring
   - Hades
+  - Stardew Valley
   - Titanfall 2
   - Forza Horizon 5
 
-## Output
-
-The final classified dataset was generated as:
+### Output
 
 ```text
 outputs/final_2100_predictions.csv
@@ -184,91 +195,121 @@ outputs/final_2100_predictions.csv
 
 ---
 
-# Large-Scale Analysis Results
-
-## Aspect Distribution
-
-| Aspect | Percentage |
-|---|---|
-| graphics | 57.38% |
-| story | 51.67% |
-| combat | 43.71% |
-| other | 43.71% |
-| controls | 28.43% |
-| price | 24.81% |
-
-## Interesting Observations
-
-- Graphics was the most discussed aspect overall
-- Elden Ring reviews heavily focused on combat
-- Forza Horizon 5 emphasized controls and graphics
-- Stardew Valley contained many emotional/cozy reviews classified as “other”
-
-## Multi-label Statistics
-
-- 87.81% of reviews contained multiple aspects
-- This validates the importance of multi-label classification instead of single-label classification
-
-Large-scale analysis output:
+# Output Files
 
 ```text
-analysis/large_scale_analysis.txt
+outputs/berget_classified.csv
+outputs/berget_classified_230.csv
+outputs/llm_kappa_overall.csv
+outputs/llm_kappa_per_aspect.csv
+outputs/final_2100_predictions.csv
 ```
 
 ---
+---
 
-# Error Analysis
+# Analysis Files
 
-Some classification errors were caused by:
+The following analysis files were generated during the evaluation process and should be consulted when writing the final report.
 
-- Implicit aspect mentions
-- Overlap between combat and controls
-- Emotional or vague review language
-- General praise without explicit aspect references
+## analysis/annotation_230_analysis.txt
 
-These observations were important for improving prompt design.
+Contains statistics for the final 230-review gold-standard dataset, including:
+
+- Total number of annotated reviews
+- Aspect frequency distribution
+- Per-game aspect distribution
+- Multi-label annotation statistics
+- Dataset composition summary
+
+This file should be used when writing:
+
+- Dataset Description
+- Annotation Statistics
+- Aspect Distribution Results
 
 ---
 
-# Main Files
+## analysis/human_kappa_results.txt
 
-## Source Files
+Contains inter-annotator agreement results computed on the shared 30-review annotation set.
 
-| File | Purpose |
-|---|---|
-| src/berget_30_annotation.py | Human evaluation pipeline |
-| src/compute_kappa_human.py | Human agreement calculation |
-| src/compute_kappa_human_vs_llm.py | LLM vs human evaluation |
-| src/run_full_2100_llama.py | Full 2100-review inference |
-| src/analyze_2100_results.py | Large-scale statistical analysis |
+Includes:
 
-## Output Files
+- Cohen's Kappa scores between annotators
+- Human agreement analysis
+- Annotation consistency observations
 
-| File | Purpose |
-|---|---|
-| outputs/berget_classified.csv | Human evaluation predictions |
-| outputs/llm_kappa_overall.csv | Overall evaluation results |
-| outputs/llm_kappa_per_aspect.csv | Per-aspect evaluation results |
-| outputs/final_2100_predictions.csv | Full classified dataset |
+This file should be used when writing:
+
+- Annotation Methodology
+- Inter-Annotator Agreement Section
+
+---
+
+## analysis/human_vs_llm_kappa.txt
+
+Contains the final Human vs LLM evaluation results on the 230-review gold-standard dataset.
+
+Includes:
+
+- Per-aspect Cohen's Kappa scores
+- Overall model Kappa scores
+- Comparison between:
+  - Llama Zero-shot
+  - Llama Few-shot
+  - Mistral Zero-shot
+  - Mistral Few-shot
+
+This file should be used when writing:
+
+- Experimental Results
+- Model Evaluation
+- Human vs LLM Comparison
+
+---
+
+## analysis/2100_data_analysis.txt
+
+Contains statistics generated from the full classified retrieval dataset.
+
+Includes:
+
+- Aspect frequency across 2100 reviews
+- Game-wise aspect trends
+- Multi-label prediction analysis
+- Large-scale dataset observations
+
+This file should be used when writing:
+
+- Large-Scale Analysis
+- Discussion Section
+- Retrieval Dataset Findings
+
+---
+
+# Main Scripts
+
+```text
+src/berget_30_annotation.py
+src/compute_kappa_human.py
+src/compute_kappa_human_vs_llm.py
+src/run_full_2100_llama.py
+src/analyze_230_annotations.py
+src/merge_annotations.py
+```
 
 ---
 
 # Conclusion
 
-This module demonstrates that prompt-based LLM classification can effectively identify gameplay-related aspects in Steam reviews.
+The experiments demonstrate that prompt-based LLM classification can reliably identify gameplay-related aspects in Steam reviews.
 
-The experiments showed:
+Evaluation on a 230-review gold-standard dataset showed that:
 
-- Strong agreement between LLM predictions and human annotations
-- Zero-shot prompting can generalize effectively
-- Multi-label aspect classification is necessary for real-world game reviews
-- Large-scale LLM inference can support downstream IR and review analysis tasks
+- Llama 3.3 70B Zero-shot achieved the highest agreement with human annotators
+- Multi-label classification is necessary for realistic game review analysis
+- Prompt-based LLMs can effectively support downstream retrieval and ranking tasks
+- Human annotation remains essential for evaluation and validation
 
-The final system successfully combines:
-
-- Human annotation
-- Prompt engineering
-- LLM evaluation
-- Retrieval integration
-- Large-scale aspect analysis
-
+The final classifier was successfully integrated into the overall retrieval pipeline and used to support aspect-aware retrieval analysis.

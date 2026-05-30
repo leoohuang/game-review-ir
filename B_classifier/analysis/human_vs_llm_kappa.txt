@@ -1,68 +1,66 @@
-Loaded rows: 30
+Loaded rows: 230
 
 ===== SAMPLE PREDICTIONS =====
 
-            human_label               llama_zeroshot  ...             mistral_zeroshot                     mistral_fewshot
-0               [story]               [price, story]  ...        [other, price, story]                      [other, story]
-1               [other]                      [other]  ...                      [other]                          [controls]
-2  [controls, graphics]  [controls, graphics, other]  ...  [controls, graphics, other]  [controls, graphics, other, price]
-3  [controls, graphics]            [graphics, other]  ...            [graphics, other]                          [graphics]
-4     [graphics, other]                      [other]  ...                      [other]                             [other]
-
-[5 rows x 5 columns]
+          aspect_labels               llama_zeroshot                llama_fewshot             mistral_zeroshot                     mistral_fewshot
+0               [story]        [other, price, story]               [price, story]        [other, price, story]                      [other, story]
+1               [other]                      [other]            [controls, other]                      [other]                          [controls]
+2  [controls, graphics]  [controls, graphics, other]  [controls, graphics, other]  [controls, graphics, other]  [controls, graphics, other, price]
+3  [controls, graphics]            [graphics, other]         [controls, graphics]            [graphics, other]                   [graphics, other]
+4     [graphics, other]                      [other]                      [other]                      [other]                             [other]
 
 ================================================
 LLM vs HUMAN KAPPA
 ================================================
 
 --- COMBAT ---
-llama_zeroshot: 1.0
-llama_fewshot: 1.0
-mistral_zeroshot: 0.645
-mistral_fewshot: 0.772
+llama_zeroshot: 0.502
+llama_fewshot: 0.456
+mistral_zeroshot: 0.442
+mistral_fewshot: 0.406
 
 --- STORY ---
-llama_zeroshot: 0.789
-llama_fewshot: 0.789
-mistral_zeroshot: 1.0
-mistral_fewshot: 0.795
+llama_zeroshot: 0.767
+llama_fewshot: 0.728
+mistral_zeroshot: 0.746
+mistral_fewshot: 0.58
 
 --- GRAPHICS ---
-llama_zeroshot: 0.769
-llama_fewshot: 0.85
-mistral_zeroshot: 0.78
-mistral_fewshot: 0.85
+llama_zeroshot: 0.613
+llama_fewshot: 0.56
+mistral_zeroshot: 0.601
+mistral_fewshot: 0.503
 
 --- PRICE ---
-llama_zeroshot: 0.783
-llama_fewshot: 0.634
-mistral_zeroshot: 0.526
-mistral_fewshot: 0.38
+llama_zeroshot: 0.539
+llama_fewshot: 0.482
+mistral_zeroshot: 0.471
+mistral_fewshot: 0.349
 
 --- CONTROLS ---
-llama_zeroshot: 0.815
-llama_fewshot: 0.659
-mistral_zeroshot: 0.734
-mistral_fewshot: 0.556
+llama_zeroshot: 0.572
+llama_fewshot: 0.547
+mistral_zeroshot: 0.507
+mistral_fewshot: 0.45
 
 --- OTHER ---
-llama_zeroshot: 0.279
-llama_fewshot: 0.279
-mistral_zeroshot: 0.237
-mistral_fewshot: 0.156
+llama_zeroshot: 0.215
+llama_fewshot: 0.219
+mistral_zeroshot: 0.102
+mistral_fewshot: 0.053
 
 ================================================
 OVERALL MODEL KAPPA
 ================================================
 
-llama_zeroshot: 0.738
-llama_fewshot: 0.718
-mistral_zeroshot: 0.689
-mistral_fewshot: 0.62
+llama_zeroshot: 0.54
+llama_fewshot: 0.51
+mistral_zeroshot: 0.473
+mistral_fewshot: 0.399
 
 Saved:
-- outputs/llm_kappa_per_aspect.csv
-- outputs/llm_kappa_overall.csv
+- ./game-review-ir/B_classifier/outputs/llm_kappa_per_aspect.csv
+- ./game-review-ir/B_classifier/outputs/llm_kappa_overall.csv
 
 Kappa guide:
 <0.2 slight
